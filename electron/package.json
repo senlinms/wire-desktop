@@ -42,11 +42,11 @@
     "electron-rebuild": "1.6.0"
   },
   "optionalDependencies": {
-    "libsodium-neon": "2.1.1",
+    "libsodium-neon": "wireapp/libsodium-neon#chore/updates",
     "node-addressbook": "https://github.com/wireapp/node-addressbook.git#2.0.0"
   },
   "scripts": {
     "rebuild-native-modules": "node ./rebuild-native-modules.js \"electron-rebuild\" \"-f -m ./\"",
-    "rebuild-neon": "node ./rebuild-native-modules.js \"electron-build-env\" \"neon build libsodium-neon\""
+    "rebuild-neon": "node ./rebuild-native-modules.js \"electron-build-env\" \"npm explore libsodium-neon -- npm run build\""
   }
 }
